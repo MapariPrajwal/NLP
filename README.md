@@ -22,7 +22,7 @@ In this repository, we've provided an implementation that demonstrates various p
 
 6. **Stop-word Removal**: Stop words are common words (e.g., "the", "is", "and") that are often filtered out during NLP tasks as they carry little semantic meaning. The implementation removes stop words from the corpus using NLTK's English stop-word corpus.
 
-7. **Output**: Finally, the code prints the results of each pre-processing task, including the tokenized forms, stemmed corpus, number of unique words, TTR, lemmatized corpus, and filtered corpus with stop words removed.
+7. **Spelling Checker**: The implementation also includes a spelling checker using the Minimum Edit Distance algorithm. This algorithm calculates the minimum number of operations (deletion, insertion, substitution) required to transform one word into another. It is used to suggest correct spellings for words based on a predefined lexicon.
 
 ## Usage
 
@@ -33,11 +33,15 @@ You can utilize this implementation by integrating it into your NLP projects or 
 Ensure you have the following Python libraries installed:
 
 - NLTK
+- NumPy
 - BeautifulSoup (for web scraping)
 
 You can install them via pip:
 ```bash
-pip install nltk beautifulsoup4
+pip install nltk numpy
+```
+```bash
+pip install beautifulsoup4
 ```
 
 ## Contributions
